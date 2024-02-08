@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+  <div class="min-h-screen bg-very-dark-blue flex items-center justify-center p-5">
+    <main class="bg-[radial-gradient(circle_at_top,#232A34,#181E27)] max-w-[420px] rounded-xl p-5 sm:p-10 space-y-5 animate-fade" id="user1">
+      <!-- Star -->
+      <div class="bg-dark-blue rounded-full w-fit p-4">
+        <img src="images/icon-star.svg" alt="star icon">
+      </div>
+      <!-- Text -->
+      <div class="space-y-3">
+        <h1 class="text-3xl text-pure-white font-bold">How did we do?</h1>
+        <p class="text-light-grey ">
+          Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <!-- Rating -->
+      <div class="flex justify-between items-center gap-1" id="rating">
+        <button class="bg-dark-blue text-medium-grey rounded-full px-3 py-1 xs:px-5 xs:py-3 group hover:bg-orange hover:text-pure-white hover:font-bold">1</button>
+        <button class="bg-dark-blue text-medium-grey rounded-full px-3 py-1 xs:px-5 xs:py-3 group hover:bg-orange hover:text-pure-white hover:font-bold">2</button>
+        <button class="bg-dark-blue text-medium-grey rounded-full px-3 py-1 xs:px-5 xs:py-3 group hover:bg-orange hover:text-pure-white hover:font-bold">3</button>
+        <button class="bg-dark-blue text-medium-grey rounded-full px-3 py-1 xs:px-5 xs:py-3 group hover:bg-orange hover:text-pure-white hover:font-bold">4</button>
+        <button class="bg-dark-blue text-medium-grey rounded-full px-3 py-1 xs:px-5 xs:py-3 group hover:bg-orange hover:text-pure-white hover:font-bold">5</button>
+      </div>
+      <!-- Button -->
+      <button class="bg-orange w-full px-2 py-3 rounded-3xl tracking-widest text-white group hover:bg-pure-white hover:text-orange" id="submit">
+        SUBMIT
+      </button>
+    </main>
+
+    <div class="hidden bg-[radial-gradient(circle_at_top,#232A34,#181E27)] max-w-[420px] rounded-xl p-6 sm:p-10 space-y-7" id="user2">
+      <!-- Thank you Section -->
+      <div class="space-y-5">
+        <div class="flex justify-center">
+          <img class="max-w-[165px]" src="images/illustration-thank-you.svg" alt="thank you illustration">
+        </div>
+        <div class="text-orange font-normal text-center flex justify-center">
+          <p class="bg-dark-blue w-fit rounded-full px-3 py-1">
+            You selected <span id="score">4</span> out of 5
+          </p>
+        </div>
+      </div>
+      <!-- Text Section --> 
+      <div class="text-center space-y-5">
+        <h1 class="text-3xl text-pure-white">
+          Thank you!
+        </h1>
+        <div class="text-light-grey">
+          We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
